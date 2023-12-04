@@ -194,31 +194,19 @@ ol {
 }
 
 .search-form__pseudo-checkbox {
-  position: relative;
   display: inline-block;
   inline-size: 20px;
   block-size: 20px;
   border: 1px solid #fff;
 }
 
-.search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
-  position: absolute;
-  display: inline-block;
-  width: 14px;
-  height: 14px;
-  background-color: #fff;
-}
-
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::before {
   content: "";
-  position: absolute;
   display: block;
   width: 14px;
   height: 14px;
   background-color: #fff;
-  inset-block-end: 50%;
-  inset-inline-end: 50%;
-  transform: translate(7px, 7px);
+  margin: 2px;
 }
 
 .search-form__checkbox-list {
