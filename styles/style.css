@@ -180,6 +180,8 @@ ol {
   outline: 0;
 }
 
+/*Валидатор ругается на строчку ниже, не пойму почему*/
+
 .search-form__label:has(:focus-visible) {
   outline: 1px solid #fff;
 }
@@ -276,6 +278,8 @@ ol {
 .content__list-item:focus {
   outline: none;
 }
+
+/*Валидатор ругается на строчку ниже, не пойму почему*/
 
 .content__list-item:has(:focus-visible) {
   outline: 2px solid #fff;
