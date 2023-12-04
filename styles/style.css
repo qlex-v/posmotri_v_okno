@@ -14,7 +14,7 @@ html {
   block-size: 100%;
   margin: auto;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
 }
@@ -48,7 +48,7 @@ ol {
   white-space: nowrap;
 }
 
-.content{
+.content {
   margin: auto;
   display: flex;
   gap: 30px;
@@ -58,13 +58,13 @@ ol {
   block-size: 534px;
 }
 
-.search-form{
+.search-form {
   display: flex;
   justify-content: space-between;
   align-items: end;
 }
 
-.content__list{
+.content__list {
   position: relative;
   block-size: 534px;
   overflow-y: scroll;
@@ -73,21 +73,21 @@ ol {
   gap: 30px;
 }
 
-.content__video-card{
+.content__video-card {
   display: flex;
   align-items: start;
 }
 
-.content__video-card-description-container{
+.content__video-card-description-container {
   flex-grow: 1;
 }
 
-.content__video-card-thumbnail{
+.content__video-card-thumbnail {
   width: 194px;
   height: 103px;
 }
 
-.content__details{
+.content__details {
   display: flex;
   flex-direction: column;
   gap: 26px;
@@ -102,81 +102,81 @@ ol {
   margin-block-end: 16px;
 }
 
-.result__video{
+.result__video {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.title{
-font-family: Oswald, sans-serif;
-font-size: 75px;
-font-weight: 700;
-line-height: 70.5px;
-text-transform: uppercase;
+.title {
+  font-family: Oswald, sans-serif;
+  font-size: 75px;
+  font-weight: 700;
+  line-height: 70.5px;
+  text-transform: uppercase;
 }
 
-.content__accent{
+.content__accent {
   color: #545050;
 }
 
-.content__card-link{
+.content__card-link {
   text-decoration: none;
   color: #fff;
 }
 
-.content__video-card-title{
-color: #FFF;
-font-family: 'Oswald', sans-serif;
-font-size: 30px;
-font-weight: 700;
-line-height: 30px;
-text-transform: uppercase;
-margin-block-end: 6px;
+.content__video-card-title {
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin-block-end: 6px;
 }
 
-.content__video-card-description{
-font-weight: 400;
-line-height: 16.2px;
+.content__video-card-description {
+  font-weight: 400;
+  line-height: 16.2px;
 }
 
-.search-form__fieldset{
-  border:0;
+.search-form__fieldset {
+  border: 0;
 }
 
-.search-form__fieldset-title{
+.search-form__fieldset-title {
   font-size: 18px;
   font-weight: 400;
   padding-block-end: 5px;
-  }
+}
 
-.search-form__label{
+.search-form__label {
   display: flex;
   width: fit-content;
   gap: 5px;
   cursor: pointer;
 }
 
-.search-form__textfield{
-    appearance: none;
-    inline-size: 225px;
-    block-size: 27px;
-    background-color: transparent;
-    border:0;
-    border-block-start: 1px solid #FFF;
-    border-block-end: 1px solid #FFF;
-    padding: 2.5px 5px 2.5px 0;
-    color: #fff;
-    font-family: 'Fira Sans Condensed', sans-serif;
-    font-size: 18px;
-    font-weight: 400;
+.search-form__textfield {
+  appearance: none;
+  inline-size: 225px;
+  block-size: 27px;
+  background-color: transparent;
+  border: 0;
+  border-block-start: 1px solid #fff;
+  border-block-end: 1px solid #fff;
+  padding: 2.5px 5px 2.5px 0;
+  color: #fff;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
 }
 
-.search-form__textfield:focus{
+.search-form__textfield:focus {
   outline: 0;
 }
 
-.search-form__textfield:focus-visible{
+.search-form__textfield:focus-visible {
   outline: 0;
 }
 
@@ -184,14 +184,14 @@ line-height: 16.2px;
   outline: 1px solid #fff;
 }
 
-.search-form__textfield::placeholder{
-  color: rgba(255, 255, 255, 0.70);
-  font-family: 'Fira Sans Condensed', sans-serif;
+.search-form__textfield::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   font-weight: 400;
 }
 
-.search-form__pseudo-checkbox{
+.search-form__pseudo-checkbox {
   position: relative;
   display: inline-block;
   inline-size: 20px;
@@ -204,85 +204,83 @@ line-height: 16.2px;
   display: inline-block;
   width: 14px;
   height: 14px;
-  background-color: #FFF;
+  background-color: #fff;
 }
 
-
-.search-form__checkbox:checked + .search-form__pseudo-checkbox::before{
-  content: '';
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::before {
+  content: "";
   position: absolute;
   display: block;
   width: 14px;
   height: 14px;
-  background-color: #FFF;
-  inset-block-end:50%;
-  inset-inline-end:50%;
+  background-color: #fff;
+  inset-block-end: 50%;
+  inset-inline-end: 50%;
   transform: translate(7px, 7px);
 }
 
-.search-form__checkbox-list{
+.search-form__checkbox-list {
   display: flex;
   gap: 15px;
 }
 
-.search-form__label:hover .search-form__label-text{
+.search-form__label:hover .search-form__label-text {
   border-bottom: 1px solid #fff;
 }
 
-.button{
+.button {
   background-color: transparent;
-  color: #FFF;
+  color: #fff;
   text-align: center;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   font-weight: 700;
   border: 1px solid #fff;
   cursor: pointer;
 }
 
-.button:hover{
+.button:hover {
   background-color: #545050;
 }
 
-.button:active{
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.70);
+.button:active {
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
 }
 
-.button:focus{
+.button:focus {
   outline: 0;
 }
 
-.button:focus-visible{
+.button:focus-visible {
   outline: 2px solid #fff;
 }
 
-.search-form__submit-button{
+.search-form__submit-button {
   inline-size: 194px;
   block-size: 34px;
 }
 
-.more-button{
+.more-button {
   inline-size: 399px;
   block-size: 34px;
 }
 
-.content__list-item:hover{
+.content__list-item:hover {
   background-color: #545050;
 }
 
-.content__list-item:active{
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.70);
+.content__list-item:active {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
 }
 
-.content__list-item:focus{
+.content__list-item:focus {
   outline: none;
 }
 
-.content__list-item:has(:focus-visible){
+.content__list-item:has(:focus-visible) {
   outline: 2px solid #fff;
 }
 
-.content__card-link:focus{
+.content__card-link:focus {
   outline: none;
 }
-
