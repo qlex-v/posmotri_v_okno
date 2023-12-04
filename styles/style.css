@@ -172,6 +172,18 @@ line-height: 16.2px;
     font-weight: 400;
 }
 
+.search-form__textfield:focus{
+  outline: 0;
+}
+
+.search-form__textfield:focus-visible{
+  outline: 0;
+}
+
+.search-form__label:has(:focus-visible) {
+  outline: 1px solid #fff;
+}
+
 .search-form__textfield::placeholder{
   color: rgba(255, 255, 255, 0.70);
   font-family: 'Fira Sans Condensed', sans-serif;
@@ -213,6 +225,10 @@ line-height: 16.2px;
   gap: 15px;
 }
 
+.search-form__label:hover .search-form__label-text{
+  border-bottom: 1px solid #fff;
+}
+
 .button{
   background-color: transparent;
   color: #FFF;
@@ -224,6 +240,22 @@ line-height: 16.2px;
   cursor: pointer;
 }
 
+.button:hover{
+  background-color: #545050;
+}
+
+.button:active{
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.70);
+}
+
+.button:focus{
+  outline: 0;
+}
+
+.button:focus-visible{
+  outline: 2px solid #fff;
+}
+
 .search-form__submit-button{
   inline-size: 194px;
   block-size: 34px;
@@ -233,3 +265,24 @@ line-height: 16.2px;
   inline-size: 399px;
   block-size: 34px;
 }
+
+.content__list-item:hover{
+  background-color: #545050;
+}
+
+.content__list-item:active{
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.70);
+}
+
+.content__list-item:focus{
+  outline: none;
+}
+
+.content__list-item:has(:focus-visible){
+  outline: 2px solid #fff;
+}
+
+.content__card-link:focus{
+  outline: none;
+}
+
