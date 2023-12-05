@@ -85,7 +85,7 @@ ol {
 
 .content__video-card-thumbnail {
   max-inline-size: 194px;
-  max-block-size: 103px;
+  block-size: 103px;
 }
 
 .content__details {
@@ -255,13 +255,13 @@ ol {
 }
 
 .search-form__submit-button {
-  min-inline-size: 194px;
-  min-block-size: 34px;
+  inline-size: 194px;
+  padding: 6px 0;
 }
 
 .more-button {
-  min-inline-size: 399px;
-  min-block-size: 34px;
+  inline-size: 399px;
+  padding: 6px 0;
 }
 
 .content__list-item:hover {
