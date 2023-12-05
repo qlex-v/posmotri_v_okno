@@ -181,11 +181,14 @@ ol {
   outline: 0;
 }
 
-/*Валидатор ругается на строчку ниже, не пойму почему*/
-
 .search-form__label:has(:focus-visible) {
   outline: 1px solid #fff;
   outline-offset: 2px;
+}
+
+.search-form__label:has(:focus-visible):active {
+  outline: 1px solid #fff;
+  outline-offset: 0;
 }
 
 .search-form__textfield::placeholder {
@@ -276,8 +279,6 @@ ol {
 .content__list-item:focus {
   outline: none;
 }
-
-/*Валидатор ругается на строчку ниже, не пойму почему*/
 
 .content__list-item:has(.content__card-link:focus-visible) {
   outline: 1px solid #fff;
