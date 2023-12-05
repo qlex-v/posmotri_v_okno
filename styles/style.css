@@ -71,6 +71,7 @@ ol {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  padding: 3px;
 }
 
 .content__video-card {
@@ -83,8 +84,8 @@ ol {
 }
 
 .content__video-card-thumbnail {
-  width: 194px;
-  height: 103px;
+  max-inline-size: 194px;
+  max-block-size: 103px;
 }
 
 .content__details {
@@ -167,7 +168,7 @@ ol {
   border-block-end: 1px solid #fff;
   padding: 2.5px 5px 2.5px 0;
   color: #fff;
-  font-family: "Fira Sans Condensed", sans-serif;
+  font-family: inherit;
   font-size: 18px;
   font-weight: 400;
 }
@@ -184,11 +185,12 @@ ol {
 
 .search-form__label:has(:focus-visible) {
   outline: 1px solid #fff;
+  outline-offset: 2px;
 }
 
 .search-form__textfield::placeholder {
   color: rgba(255, 255, 255, 0.7);
-  font-family: "Fira Sans Condensed", sans-serif;
+  font-family: inherit;
   font-size: 18px;
   font-weight: 400;
 }
@@ -214,15 +216,20 @@ ol {
   gap: 15px;
 }
 
-.search-form__label:hover .search-form__label-text {
-  border-bottom: 1px solid #fff;
+.search-form__label:hover {
+  text-decoration-line: underline;
+  text-underline-offset: 3px;
+}
+
+.search-form__label:has(.search-form__textfield):hover {
+  text-decoration-line: none;
 }
 
 .button {
   background-color: transparent;
   color: #fff;
   text-align: center;
-  font-family: "Fira Sans Condensed", sans-serif;
+  font-family: inherit;
   font-size: 18px;
   font-weight: 700;
   border: 1px solid #fff;
@@ -230,11 +237,12 @@ ol {
 }
 
 .button:hover {
-  background-color: #545050;
+  text-decoration-line: underline;
+  text-underline-offset: 3px;
 }
 
 .button:active {
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+  background-color: #545050;
 }
 
 .button:focus {
@@ -242,25 +250,27 @@ ol {
 }
 
 .button:focus-visible {
-  outline: 2px solid #fff;
+  outline: 1px solid #fff;
+  outline-offset: 2px;
 }
 
 .search-form__submit-button {
-  inline-size: 194px;
-  block-size: 34px;
+  min-inline-size: 194px;
+  min-block-size: 34px;
 }
 
 .more-button {
-  inline-size: 399px;
-  block-size: 34px;
+  min-inline-size: 399px;
+  min-block-size: 34px;
 }
 
 .content__list-item:hover {
-  background-color: #545050;
+  text-decoration-line: underline;
+  text-underline-offset: 3px;
 }
 
 .content__list-item:active {
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+  background-color: #545050;
 }
 
 .content__list-item:focus {
@@ -269,8 +279,9 @@ ol {
 
 /*Валидатор ругается на строчку ниже, не пойму почему*/
 
-.content__list-item:has(:focus-visible) {
-  outline: 2px solid #fff;
+.content__list-item:has(.content__card-link:focus-visible) {
+  outline: 1px solid #fff;
+  outline-offset: 2px;
 }
 
 .content__card-link:focus {
